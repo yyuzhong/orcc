@@ -141,7 +141,7 @@ public class SplitJoin extends DfVisitor<Void> {
 		}
 
 		/* this code was originally designed for pipelines of selected actor */
-		List<Instance> selected = new ArrayList<>();
+		List<Instance> selected = new ArrayList();
 		selected.add(instanceToTransform);
 		Instance leftMost = leftMostInstance(allInstances, selected);
 		Instance rightMost = rightMostInstance(allInstances, selected);
